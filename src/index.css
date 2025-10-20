@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'KyivTypeTitling';
+    src: url('/src/assets/fonts/KyivTypeTitling.ttf') format('truetype');
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #55C1EF 43%, #11192F 80%);
+    -webkit-background-clip: text; /* required for gradient text */
+    -webkit-text-fill-color: transparent; /* make text transparent */
+    font-size: 1.875rem; 
+    font-weight: 700; 
+  }
+  .center-column {
+    display: flex;             
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    text-align: center;        
+    font-family: 'Kyiv', sans-serif; 
+  }
+.custom-bullet {
+  list-style-type: none;
+  padding-top: 10px;  
+  /* padding-left: 1rem;     */
+}
+
+.custom-bullet li {
+  position: relative;
+  padding-left: 2rem; 
+ 
+}
+
+.custom-bullet li::before {
+  content: ''; /* required for pseudo-element to show */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;   /* bullet width */
+  height: 1.5rem;  /* bullet height */
+  background-image: url('/dot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* contact page */
+.contact-container{
+   
+  width: 800px;
+  margin: 100px auto 40px auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.pagination button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.pagination button:hover {
+  background: #f0f0f0;
+}
+
+
+.pagination button:disabled {
+  background: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+
+.pagination .active {
+  background: #2155cd; 
+  color: white;       
+  font-weight: 600;
+  border: 1px solid #2155cd;
+}
+
