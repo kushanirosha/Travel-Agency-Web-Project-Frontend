@@ -56,7 +56,7 @@ const PackageDetails = () => {
 
   const getImageUrl = (imagePath?: string) => {
     if (imagePath) {
-      return `http://localhost:5000${imagePath}`;
+      return `https://backend.paradisepeaktravels.com${imagePath}`;
     }
     // Return null if no image path - let components handle no image case
     return null;

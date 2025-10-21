@@ -48,7 +48,7 @@ const Bookable = () => {
 
 	const getImageUrl = (imagePath?: string) => {
 		if (imagePath) {
-			return `http://localhost:5000${imagePath}`;
+			return `https://backend.paradisepeaktravels.com${imagePath}`;
 		}
 		return null;
 	};
